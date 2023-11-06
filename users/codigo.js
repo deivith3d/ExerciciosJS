@@ -3,16 +3,11 @@ let imgPessoa =document.getElementById("imgUser")
 let btAnt = document.getElementById("btVoltar")
 let btProx = document.getElementById("btAvancar")
 
-btAnt.addEventListener("click",Anterior)
-btProx.addEventListener("click",Proximo)
 
 let cont=0
 
 let nomes = ["Aluno","Professor","Funcionário","Administrador"]
 let imagens = ["img/user1.png","img/user2.png","img/user3.png","img/user4.png"]
-
-
-
 
 
 function Anterior()
@@ -34,4 +29,7 @@ function Proximo()
     txtPessoa.innerText = nomes[cont]
     imgPessoa.src= imagens[cont]
 }
+
+btAnt.addEventListener("click",Anterior)
+btProx.addEventListener("click",Proximo)
 
